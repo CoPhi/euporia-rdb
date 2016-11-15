@@ -1,0 +1,49 @@
+/*
+span.line{
+    display: block;
+    width: 32px;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+}
+*/
+p{
+    margin:0;
+}
+td.text{
+    text-align:left;
+    vertical-align:top;
+    border: solid lightgray;
+}
+td.anno{
+    text-align:left;
+    vertical-align:top;
+    border: solid lightgray;
+}
+div{
+    display: block;
+    resize: both;
+    overflow: auto;
+}
+div.sp{
+    resize: both;
+    overflow-y: scroll;
+    text-align:left;
+    display: block;
+    width:480px;
+}
+div.anno{
+  text-align:left;
+  display: block;
+  width:960px;
+  word-wrap: break-word;
+}
+span{
+    
+}
+span:after{
+    content: \0020;
+}
+span.speaker{
+    font-weight: bold;
+}

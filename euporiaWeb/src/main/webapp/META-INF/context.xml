@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/euporiaWeb">
+  <Resource 
+      name="jdbc/trag" 
+      auth="Container" 
+      type="javax.sql.DataSource" 
+      maxActive="100" 
+      maxIdle="30" 
+      maxWait="10000" 
+      username="****" 
+      password="****"
+      driverClassName="com.mysql.jdbc.Driver" 
+      url="jdbc:mysql://localhost:3306/****"/>
+  <Resource 
+      name="jdbc/auth" 
+      description="Sample authentication" 
+      type="javax.sql.DataSource" 
+      auth="Container" 
+      driverClassName="com.mysql.jdbc.Driver" 
+      maxActive="100" 
+      maxIdle="30" 
+      maxWait="10000" 
+      password="****" 
+      url="jdbc:mysql://localhost:3306/authority" 
+      validationQuery="select 1" 
+      username="****"/>
+  <Realm 
+      className="org.apache.catalina.realm.DataSourceRealm" 
+      userTable="users" 
+      userNameCol="user_name" 
+      userCredCol="user_pass" 
+      userRoleTable="user_roles"
+      roleNameCol="role_name" 
+      localDataSource="true"
+      dataSourceName="jdbc/auth"/>
+</Context>
