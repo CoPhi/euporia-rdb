@@ -1,0 +1,105 @@
+/*
+span.line{
+    display: block;
+    width: 32px;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+}
+*/
+a{
+    text-decoration: none !important;
+}
+
+input {
+   bottom: 0;
+   right: 0;
+}
+
+table{
+    width: 100%;
+}
+th{
+    text-align: left;
+    vertical-align: top;
+}
+td.text{
+    width: 50%;
+    text-align:left;
+    vertical-align:top;
+}
+td.anno{
+    width: 50%;
+    text-align:left;
+    vertical-align:top;
+}
+div{
+    display: block;
+    resize: both;
+    overflow: auto;
+}
+div.sp{
+    resize: both;
+    overflow-y: scroll;
+    text-align:left;
+    display: block;
+}
+div.anno{
+  text-align:left;
+  display: block;
+  width:1400px;
+  word-wrap: break-word;
+}
+span{
+    
+}
+span:after{
+    content: \0020;
+}
+span.speaker{
+    font-weight: bold;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	border-radius:3px;
+	background:#fafafa;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	width:100%;
+	/*padding:15px;*/
+	display:inline-block;
+	border-bottom:1px solid #1a1a1a;
+	background:#f7f7f7;
+	transition:all linear 0.15s;
+	/* Type */
+	/*font-size:1.200em;*/
+	/*text-shadow:0px 1px 0px #1a1a1a;*/
+	color:#000000;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background:#cccccc;
+	/* Type */
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}
