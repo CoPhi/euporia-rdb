@@ -24,7 +24,7 @@
     text=sb.toString();
     text=text.replaceAll("><","> <");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/****?useUnicode=true&characterEncoding=utf-8&user=****&password=****");    
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/####?useUnicode=true&characterEncoding=utf-8&user=****&password=****");    
     con.setAutoCommit(false);
     Statement stmt = con.createStatement();
     stmt.executeUpdate("update tragedies set annotation='"+text+"' where id="+target+";");
